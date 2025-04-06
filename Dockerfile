@@ -16,7 +16,7 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Install FreeCAD
-RUN wget https://github.com/FreeCAD/FreeCAD/releases/download/0.21.2/FreeCAD_0.21.2-Linux-Conda_Py3.11_glibc2.28-x86_64.AppImage \
+RUN wget https://github.com/FreeCAD/FreeCAD/releases/download/0.21.2/FreeCAD-0.21.2-Linux-x86_64.AppImage \
     -O /FreeCAD.AppImage && chmod +x /FreeCAD.AppImage && \
     /FreeCAD.AppImage --appimage-extract
 
